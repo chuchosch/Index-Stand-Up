@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.todo {
+    background-image: url(../assets/images/fondo\ stand\ up.jpg);
+    background-size: ;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Alumni Sans Inline One', cursive;
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Alumni Sans Inline One', cursive;
+}
+.ColorParrafo {
+    color: black;
+    margin: 10px;
+}
+#contenedor {
+    display: inline;
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    border: 0px;
+}
+#contenedor2 {
+    background-color: aqua;
+    height: 400px;
+    width: 200px;
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    border: 0px;
+}
+#grilla {
+    display: grid;
+    grid-template-areas: "nav header header"
+                        "nav nosotros aside"
+                        "nav objetivo aside"
+                        "footer footer footer";
+    grid-template-rows: auto auto 413px auto;
+    grid-template-columns: 200px 600px 200px;
+    
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    color
+}
+section#nosotros{
+    grid-area: nosotros;
+}
+section#objetivo{
+    grid-area: objetivo;
+}
+aside{
+    grid-area: aside;
+}
+#pie{
+    color: rgb(225, 65, 188);
+}
+#ListaOpen{
+    display: grid;
+    grid-template-columns: 1fr auto auto; 
+    grid-template-rows: 20px auto 496px auto;
+    grid-template-areas: "nav foto nombre"
+                        " nav foto texto"
+                        "nav foto texto"
+                        "footer footer footer";
+    justify-content: start;
+}
+section#foto{
+    grid-area: foto;
+}
+section#texto{
+    grid-area: texto;
+}
+aside{
+    grid-area: nombre;
+}
+#ListaCursos{
+    display: grid;
+    grid-template-columns: 1fr auto auto; 
+    grid-template-rows: 20px auto 496px auto;
+    grid-template-areas: "nav foto nombre"
+                        " nav foto texto"
+                        "nav foto texto"
+                        "footer footer footer";
+    justify-content: start;
+}
+#Color{
+    color: rgb(173, 201, 230);
+}
+#formulario{
+    display: grid;
+    grid-template-columns: 1fr auto auto; 
+    grid-template-rows: 20px auto 380px auto auto;
+    grid-template-areas: "nav foto nombre"
+                        " nav foto texto"
+                        "nav foto texto"
+                        "form form form"
+                        "footer footer footer";
+    justify-content: start;
+}
