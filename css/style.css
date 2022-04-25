@@ -6,7 +6,7 @@
     background-image: url(../assets/images/fondo\ stand\ up.jpg);
     background-size: ;
 }
-h1 {
+.encabezado {
     color: black;
     text-align: center;
     font-size: 40px;
@@ -115,4 +115,17 @@ aside{
                         "form form form"
                         "footer footer footer";
     justify-content: start;
+}
+.aparecer:hover{
+    animation-name: aparecer;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes aparecer {
+    0%{
+        transform: 0px, 0px;}
+    100%{
+        transform: translate(50px, 0px)}
 }
