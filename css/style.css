@@ -1,13 +1,13 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 .todo {
-    background-image: url(../assets/images/fondo\ stand\ up.jpg);
-    background-size: ;
+    background-color: black;
+    color: fuchsia;
 }
 .encabezado {
-    color: black;
     text-align: center;
     font-size: 40px;
     font-family: 'Alumni Sans Inline One', cursive;
@@ -18,16 +18,10 @@ h2 {
     font-family: 'Alumni Sans Inline One', cursive;
 }
 .ColorParrafo {
-    color: black;
     margin: 10px;
 }
 #contenedor {
-    display: inline;
-    width: 1000px;
-    padding: 0px;
-    margin: 0px;
     list-style-type: none;
-    border: 0px;
 }
 #contenedor2 {
     background-color: aqua;
@@ -45,11 +39,13 @@ h2 {
                         "nav objetivo aside"
                         "footer footer footer";
     grid-template-rows: auto auto 413px auto;
-    grid-template-columns: 200px 600px 200px;
-    
+    grid-template-columns: 15% 65% 20%;
+    justify-items: center;
+    align-items: center;
 }
 header{
     grid-area: header;
+    padding: 1rem;
 }
 nav{
     grid-area: nav;
@@ -57,15 +53,15 @@ nav{
 footer{
     grid-area: footer;
     background-color: black;
-    margin: 0%;
-    padding: 0%;
-    color
+    padding: 1rem;
 }
 section#nosotros{
     grid-area: nosotros;
+    padding: 1rem;
 }
 section#objetivo{
     grid-area: objetivo;
+    padding: 1rem;
 }
 aside{
     grid-area: aside;
@@ -128,4 +124,22 @@ aside{
         transform: 0px, 0px;}
     100%{
         transform: translate(50px, 0px)}
+}
+@media (max-width:480px){
+    #grilla {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: "header"
+                             "nav"
+                             "nosotros"
+                             "objetivo"
+                             "aside"
+                             "footer";
+    }
+    #contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
 }
