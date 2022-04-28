@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body class="todo">
     <header>
@@ -13,7 +14,44 @@
     </header>
     <div id="ListaCursos">
         <section id="foto">
-            <img src="./assets/images/curso taburete.jpg " alt="" height="200px" width="200px">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Curso de creatividad-Taburete
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong><img src="./assets/images/curso taburete.jpg " alt="" height="200px" width="200px"></strong> Taburete es el club de comedia mas reconocido de buenos aires. Ademas de ser uno de los primeros bares impulsores de la industria del stand up, tambien son uno de los predecesores de los cursos de stand up. Sus aportes a la cultura son dignos de aplauso y agradeserles es lo minimo que podemos hacer.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Curso nivel inicial-Felix Buenaventura
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Curso de improvisacion-Feli Martis
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <nav> 
         <ul id="contenedor">
@@ -35,15 +73,15 @@
         </ul>
     </nav>
     <aside id="nombre"> 
-        <h5 id="pie">Taburete</h5>
     </aside>
     <section id="texto">
-        <p id="pie">Taburete es el club de comedia mas reconocido de buenos aires. Ademas de ser uno de los primeros bares impulsores de la industria del stand up, tambien son uno de los predecesores de los cursos de stand up. Sus aportes a la cultura son dignos de aplauso y agradeserles es lo minimo que podemos hacer.
+        <p id="pie">
         </p>
     </section>
     <footer id="pie">
         Este foro esta constantemente actualizandose para el beneficio de los usuarios y la comunidad argentina del stand up en pos de su crecimiento. Si queres colaborar con la pagina podes donar un cafecito entrando a este link *Link cafecito*
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     </div>            
 </body>
 </html>
