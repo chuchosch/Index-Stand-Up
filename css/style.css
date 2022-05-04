@@ -89,14 +89,13 @@ aside{
     grid-area: nombre;
 }
 #ListaCursos{
-    display: grid;
-    grid-template-columns: 1fr auto auto; 
-    grid-template-rows: 20px auto 496px auto;
-    grid-template-areas: "nav foto nombre"
-                        " nav foto texto"
-                        "nav foto texto"
-                        "footer footer footer";
-    justify-content: start;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav"
+                        "foto"
+                        "nombre"
+                        "texto"
+                        "footer";
 }
 #Color{
     color: rgb(173, 201, 230);
