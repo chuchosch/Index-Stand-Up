@@ -1,1 +1,129 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* imports */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  overflow-x: hidden;
+}
+
+.encabezado {
+  justify-content: center;
+  display: flex;
+  background-color: red;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+.titulo {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.colorPrimario {
+  color: red;
+}
+
+nav li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+nav form > button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  max-height: 20rem;
+}
+
+@media (min-width: 700px) {
+  .carousel-inner {
+    max-height: none;
+  }
+}
+
+section {
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+  margin: auto;
+}
+
+section span {
+  color: red;
+}
+
+section h1 {
+  padding: 3px;
+  border-top: 3px;
+}
+
+section p {
+  padding: 3px;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90% !important;
+  }
+}
+
+.telon {
+  background-image: url(../assets/images/telonPosta.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 960px) {
+  .telon {
+    background-image: none;
+  }
+  section {
+    padding-top: 20px;
+  }
+}
+
+.contenedor {
+  display: inline-block;
+}
+
+#contenedor2 {
+  display: grid;
+  grid-template-areas: "imagen section";
+  grid-template-columns: 250px 70%;
+  grid-template-rows: 100%;
+  border: 5px solid red;
+  padding: 15px;
+  margin: 10px;
+  padding-right: 200px;
+}
+
+aside#imagen {
+  grid-area: imagen;
+  margin: 5px;
+}
+
+aside {
+  grid-area: section;
+}
+
+aside span {
+  color: red;
+}
+
+.imagen:hover {
+  filter: opacity(0.5);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.telon{
+    background-image: url(../assets/images/telonPosta.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+@media (max-width:960px) {
+    .telon{
+        background-image: none;
+}
+    section{
+        padding-top: 20px;
+    }
+}

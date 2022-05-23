@@ -7,88 +7,91 @@
     <title>Stand Up Forum</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@100&display=swap">
 </head>
-<body class="todo container-fluid">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./OpenMics.html">Open Mics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./Cursos.html">Cursos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./Bares.html">Bares</a>
+<body>
+
+  <!-- nav -->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand imagen" href="./index.html">
+        <span class="titulo">Stand Up Forum</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item imagen">
+            <a class="nav-link active" aria-current="page" href="./OpenMics.html">Open Mics</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./Contacto.html">Contacto</a>
-        </li>
-      </ul>
-      <div class="row">
-          <h1 class="text-center">Stand Up Forum</h1>
+          <li class="nav-item imagen">
+            <a class="nav-link active" aria-current="page" href="./Cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item imagen">
+            <a class="nav-link active" aria-current="page" href="./comedyClubs.html">Bares</a>
+          </li>
+          <li class="nav-item imagen">
+            <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+          <button class="btn btn-danger btn-danger-outline-success" type="button">Suscribite</button>
+        </form>
       </div>
-      <div class="container-fluid">
-        <div class="row align-items-start">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Show Chucho</h5>
-                  <p class="card-text">Chucho presenta su unipersonal en la silla electrica</p>
-                  <a href="#" class="btn btn-primary">Tickets</a>
-                </div>
-              </div>
-              
-          </div>
-        </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                  One of three columns
-                </div>
-                <div class="col">
-                  One of three columns
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Show Nico de Tracy</h5>
-                          <p class="card-text">Nicolas de Tracy presenta su unipersonal en taburete</p>
-                          <a href="#" class="btn btn-primary">Tickets</a>
-                        </div>
-                      </div>
-                      
-                </div>
-              </div>
-              <div class="row align-items-end">
-                <div class="col">
-                  One of three columns
-                </div>
-                <div class="col">
-                  One of three columns
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Show Cris Condomi</h5>
-                          <p class="card-text">Cristian Condomi presenta su unipersonal en la silla electrica</p>
-                          <a href="#" class="btn btn-primary">Tickets</a>
-                        </div>
-                      </div>
-          
-                </div>
-              </div>
-            </div>          
-            <script src="./js/bootstrap.bundle.min.js"></script>
+    </div>
+  </nav>
+
+<!-- slider -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./assets/images/edit2.jpg" class="d-block w-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./assets/images/edit1.jpg" class="d-block w-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./assets/images/edit3.jpg" class="d-block w-100" alt="slide3">
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+<div class="contenedor">
+  <main class="telon">
+    <section>
+    <h1>Esta pagina tiene como unica intencion de promover la industria Argentina del <span>stand up</span></h1>
+    <p class="fuenteParrafo"><span>Stand Up Forum</span> Es una pagina web en la que vas a encontrar distina informacion acerca de la industria del stand up en Argentina, como por ejemplo, donde se ubican los diferentes comedy clubs, a que cursos podrias integrarte y distintos open mics en donde probar material. Tambien podras contactarnos si es que te surge alguna duda.</p>
+    </section>
+  </main>
+    <footer>
+      <p class="encabezado container-fluid">
+        Copyright 2022 Contactanos 4737-0026
+      </p>
+    </footer>
+</div>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

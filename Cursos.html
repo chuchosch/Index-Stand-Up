@@ -7,81 +7,80 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@100&display=swap">
 </head>
-<body class="todo">
-    <header>
-        <h1>Cursos</h1>
-    </header>
-    <div id="ListaCursos">
-        <section id="foto">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Curso de creatividad-Taburete
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong><img src="./assets/images/curso taburete.jpg " alt="" height="200px" width="200px"></strong> Taburete es el club de comedia mas reconocido de buenos aires. Ademas de ser uno de los primeros bares impulsores de la industria del stand up, tambien son uno de los predecesores de los cursos de stand up. Sus aportes a la cultura son dignos de aplauso y agradeserles es lo minimo que podemos hacer.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Curso nivel inicial-Felix Buenaventura
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Curso de improvisacion-Feli Martis
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-        <nav> 
-        <ul id="contenedor">
-                <li>
-                    <a href="/index.html"><img src="./assets/images/inicio.png" width="100px" height="100px" class="aparecer"></a>
-                </li>
-                <li>
-                    <a href="./OpenMics.html"><img src="https://images.hive.blog/0x0/https://steemitimages.com/DQmXitsGZR1phB7qyDUdkR35VZRrScSPvfaXcNMCCXZky83/giphy.gif" width="100px" height="100px" class="aparecer"></a>
-                </li>
-                <li>
-                    <a href="./Cursos.html"><img src="https://static.wixstatic.com/media/30d9cca4ab2c4735a696d1f88a45a719.jpg/v1/fill/w_252,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Coming%20Soon%20Neon%20Light.jpg" width="100px" height="100px" class="aparecer"></a>
-                </li>
-                <li>
-                    <a href="./Bares.html"><img src="https://prodimages.the-sign-store.com/prodimages/l100-1034-bar-led-sign.gif" width="100px" height="100px" class="aparecer"></a>
-                </li>
-                <li>
-                    <a href="./contacto.html"><img src="https://media.istockphoto.com/photos/contact-us-shaped-neon-light-on-black-wall-picture-id1140384857?k=20&m=1140384857&s=170667a&w=0&h=9wpmdDj_xqKwPauRz2RnqswJ3LTn1_D_z4xUYwh6gy8=" width="100px" height="100px" class="aparecer"></a>
-                </li>
-        </ul>
+<body>
+
+    <!-- nav -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand imagen" href="./index.html">
+          <span class="titulo">Stand Up Forum</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item imagen">
+              <a class="nav-link active" aria-current="page" href="./OpenMics.html">Open Mics</a>
+            </li>
+            <li class="nav-item imagen">
+              <a class="nav-link active" aria-current="page" href="./Cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item imagen">
+              <a class="nav-link active" aria-current="page" href="./comedyClubs.html">Bares</a>
+            </li>
+            <li class="nav-item imagen">
+              <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+            <button class="btn btn-danger btn-danger-outline-success" type="button">Suscribite</button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <aside id="nombre"> 
+
+    <!-- contenido -->
+
+  <div id="contenedor2">
+      <aside#imagen class="imagen">
+        <a href="#"> <img src="./assets/images/cursoTaburete.jpg" alt="curso taburete club de comedia" width="200px" height="200px"></a>
+  </aside#imagen>
+      <aside>
+          <p><span>Taburete</span> es el club de comedia mas reconocido de buenos aires. Ademas de ser uno de los primeros bares impulsores de la industria del stand up, tambien son uno de los predecesores de los cursos de stand up. Sus aportes a la cultura son dignos de aplauso y agradecerles es lo minimo que podemos hacer. Presionar en la imagen para mas informacion.</p>
+      </aside>
+  </div>
+
+  <div id="contenedor2">
+      <aside#imagen class="imagen">
+        <a href="#"><img src="./assets/images/cursoFelix.png" alt="curso felix buenaventura" width="200px" height="200px"></a>
+  </aside#imagen>
+      <aside>
+          <p><span>Felix Buenaventura</span> es un comediante Argentino ya consagrado el cual toma el rol de ensenar a las generacion futuras el marco teorico de este hermoso arte llamado stand up. Es mi rol como comunicador a traves de esta pagina, darle entidad a esta gran persona y mejor comediante. Presionar en la imagen para mas informacion.</p>
+      </aside>
+  </div>
+
+  <div id="contenedor2">
+    <aside#imagen class="imagen">
+      <a href="#"><img src="./assets/images/cursoFamosos.jpg" alt="curso dado por famosos" width="200px" height="200px"></a>
+</aside#imagen>
+    <aside>
+        <p><span>Stand up Argentina</span> organizo un gran curso dado por distintos famosos como Mike Chouy, Laila Roth, Diego Maggio, entre otros. Esta porductora de stand up es simil a comedy central en cuanto a influencia en nuestro pais y recorrido. Liderado por Diego Maggio, esta productora dio a la luz a los comediantes que hoy en dia dictan el curso</p>
     </aside>
-    <section id="texto">
-        <p id="pie">
-        </p>
-    </section>
-    <footer id="pie">
-        Este foro esta constantemente actualizandose para el beneficio de los usuarios y la comunidad argentina del stand up en pos de su crecimiento. Si queres colaborar con la pagina podes donar un cafecito entrando a este link *Link cafecito*
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    </div>            
+</div>
+
+  <footer>
+      <p class="encabezado container-fluid">
+        Copyright 2022 Contactanos 4737-0026
+      </p>
+  </footer>
+  
+
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

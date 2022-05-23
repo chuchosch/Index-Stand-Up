@@ -1,0 +1,19 @@
+.titulo {
+    color: $colorPrimario;
+    font-size: $letraTitulo;
+    font-weight: bold;
+}
+.colorPrimario {
+    color: $colorPrimario;
+}
+nav{
+    li > a{
+        font-size: $fuenteMenu;
+        font-weight: bold;
+        color: $colorMenu;
+    }
+    form > button{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

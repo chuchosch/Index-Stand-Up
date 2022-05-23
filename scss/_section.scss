@@ -1,0 +1,23 @@
+section{
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 150px;
+        margin: auto; 
+    span{
+        color: $colorPrimario;
+        }
+    h1{
+        padding: 3px;
+        border-top: 3px;
+    }
+    p{
+        padding: 3px;
+    }
+}
+@media (max-width: 768px){
+    section {
+        width: 90% !important;
+    }
+}
+
