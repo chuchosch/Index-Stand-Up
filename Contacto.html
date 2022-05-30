@@ -4,57 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iniciate en el stand up gracias a esta informacion la comedia a un click de distancia conoce comediantes">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat:wght@100&display=swap">
 </head>
-<body class="todo">
-    <!-- <header>
-        <h1>contacto</h1>
-    </header>
-    <div id="formulario">
-        <nav> 
-        <ul id="contenedor">
-            <li>
-                <a href="/index.html"><img src="./assets/images/inicio.png" width="100px" height="100px" class="aparecer"></a>
-            </li>
-            <li>
-                <a href="./OpenMics.html"><img src="https://images.hive.blog/0x0/https://steemitimages.com/DQmXitsGZR1phB7qyDUdkR35VZRrScSPvfaXcNMCCXZky83/giphy.gif" width="100px" height="100px" class="aparecer"></a>
-            </li>
-            <li>
-                <a href="./Cursos.html"><img src="https://static.wixstatic.com/media/30d9cca4ab2c4735a696d1f88a45a719.jpg/v1/fill/w_252,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Coming%20Soon%20Neon%20Light.jpg" width="100px" height="100px" class="aparecer"></a>
-            </li>
-            <li>
-                <a href="./Bares.html"><img src="https://prodimages.the-sign-store.com/prodimages/l100-1034-bar-led-sign.gif" width="100px" height="100px" class="aparecer"></a>
-            </li>
-            <li>
-                <a href="./contacto.html"><img src="https://media.istockphoto.com/photos/contact-us-shaped-neon-light-on-black-wall-picture-id1140384857?k=20&m=1140384857&s=170667a&w=0&h=9wpmdDj_xqKwPauRz2RnqswJ3LTn1_D_z4xUYwh6gy8=" width="100px" height="100px" class="aparecer"></a>
-            </li>
-        </ul>
-    </nav>
-    <aside id="nombre"> 
-    </aside>
-    <section id="texto">
-    </section>
-    <footer id="pie">
-        Este foro esta constantemente actualizandose para el beneficio de los usuarios y la comunidad argentina del stand up en pos de su crecimiento. Si queres colaborar con la pagina podes donar un cafecito entrando a este link *Link cafecito*
-    </footer>
-    <form action="" method="get" id="form">
-        <label for="nombre">Ingrese su nombre</label>
-        <input type="text" name="nombre">
-        <label for="apellido">Ingrese su apellido</label>
-        <input type="text" name="apellido">
-        <label for="mail">Ingrese su mail</label>
-        <input type="email" name="mail">
-        <label for="info">Contanos sobre tu evento!</label>
-        <input type="text" name="info">
-        <input type="submit" name="" id="">
-    </form>
-    </div>             -->
+<body class="mg-20">
 
-    <!-- nav -->
-      
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
           <a class="navbar-brand imagen" href="./index.html">
@@ -66,16 +23,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item imagen">
-                <a class="nav-link active" aria-current="page" href="./OpenMics.html">Open Mics</a>
+                <a class="nav-link active" aria-current="page" href="./openMics.html">Open Mics</a>
               </li>
               <li class="nav-item imagen">
-                <a class="nav-link active" aria-current="page" href="./Cursos.html">Cursos</a>
+                <a class="nav-link active" aria-current="page" href="./cursos.html">Cursos</a>
               </li>
               <li class="nav-item imagen">
                 <a class="nav-link active" aria-current="page" href="./comedyClubs.html">Bares</a>
               </li>
               <li class="nav-item imagen">
-                <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -87,46 +44,58 @@
       </nav>
 
       <!-- Form -->
+      <div class="p-3">
+
       <h1>Tienes algo para decir?</h1>
 
       <p>A través de este formulario puedes enviarme un mensaje para ayudarme a corregir errores, a mejorar mi blog, o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un mensaje. Estaré feliz de contestarte!</p>
       
-      <form action="../../form-result.php" target="_blank">
+      <form>
       
-        <fieldset>
+        <!-- <fieldset> -->
       
           <legend>Mensaje</legend>
-      
-          <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
-      
-          <p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
-      
-          <p>
+
+          <div>
+
+            <label>Tu nombre: <input type="text" name="nombre"></label>
+
+         </div>
+         
+         <div>
+
+            <label class="margen">Tu dirección de correo: <input type="text" name="correo"></label>
+
+         </div>
+
+         <div>
       
             <label>
       
-              Tu mensaje:<br>
+              Tu mensaje:
       
               <textarea name="mensaje"></textarea>
       
             </label>
       
-          </p>
+         </div>
       
-        </fieldset>
+        
       
-        <p>
+        <div>
       
-          <input type="submit" value="Enviar mensaje">
+          <input type="submit" value="Enviar mensaje" class="btn-danger">
       
-          <input type="reset" value="Comenzar de nuevo">
+          <input type="reset" value="Comenzar de nuevo" class="btn-danger">
       
-        </p>
+        </div>
       
       </form>
 
+    </div>
+
       <footer>
-        <p class="encabezado container-fluid">
+        <p class="pie container-fluid">
           Copyright 2022 Contactanos 4737-0026
         </p>
     </footer>
